@@ -17,7 +17,7 @@ public class AddCustomerPage {
 		
 	}
 	@FindBy(xpath="/html/body/div[3]/div/ul/li[2]/a")
-	WebElement clickAddnewCustomer;
+	WebElement AddnewCustomer;
 	
 	@FindBy(name="name")
 	WebElement CustomerName;
@@ -53,7 +53,7 @@ public class AddCustomerPage {
 	WebElement btnsubmit;
 	
 	public void ClickNewCustomer() {
-		clickAddnewCustomer.click();
+		AddnewCustomer.click();
 	}
 	public void custName(String cname) {
 		CustomerName.sendKeys(cname);
